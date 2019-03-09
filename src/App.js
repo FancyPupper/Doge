@@ -1,28 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+class DogeMeme extends Component {
+	render(){
+		return (
+			<div className="dog">
+				<div  id="up" className="white">
+					<p>Soy un texto</p>
+				</div>
+				<div id="down" className="white">
+					<p>Soy otro texto</p>
+				</div>
+			</div>
+		)
+	}
 }
 
-export default App;
+export default DogeMeme;
