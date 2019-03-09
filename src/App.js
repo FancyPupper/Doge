@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 
 class DogeMeme extends Component {
+	
 	render(){
 		return (
 			<div className="dog">
 				<div  id="up" className="white">
-					<p>Soy un texto</p>
+					<p>{this.props.top}</p>
 				</div>
 				<div id="down" className="white">
-					<p>Soy otro texto</p>
+					<p>{this.props.bottom}</p>
 				</div>
 			</div>
 		)
