@@ -4,7 +4,7 @@ import './index.css';
 import DogeMeme from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<DogeMeme top={'EASY PEASY'} bottom={'LEMON SQUEEZY'}/>, document.getElementById('root'));
+ReactDOM.render(<DogeMeme/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

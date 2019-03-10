@@ -8,26 +8,51 @@ class DogeMeme extends Component {
 			top:'',
 			bottom:''
 		};
-
 	// this.handleInputChange = this.handleInputChange.bind(this);
-
 	}
+
 	handleInputChange = (event) => {
 		let val = event.target.value;
 		let name = event.target.name;
 		// console.log(name);
 		// console.log(val)
+		
 		this.setState({
 			[name]: val
 		})
+	//	console.log(this.state);
+
 	}
+
+	handleReset = (event)=> {
+		event.preventDefault();
+		this.setState({
+			top:'RESET MUCH',
+			bottom:'HOW GOOD'
+		})
+	//	console.log(this.state);
+
+	}
+
+	/*clickMe = (event) => {
+		let name = event.target.name;
+
+
+		event.preventDefault();
+
+		this.setState({
+		top:'RESET MUCH',
+		bottom:'HOW GOOD'
+		})
+	}*/
 
 	render(){
 		return (
 			<div>
-				<form id="ins">
-	        		<input type="text" name="top" onChange={this.handleInputChange}/>
-	        		<input type="text" name="bottom" onChange={this.handleInputChange}/>
+				<form id="ins" onSubmit={this.handleReset}>
+	        		<input type="text" value={this.state.top} name="top" onChange={this.handleInputChange}/>
+	        		<input type="text" value={this.state.bottom} name="bottom" onChange={this.handleInputChange}/>
+	        		<input type="submit" value="Reset"/>
 	      		</form>
 
 				<div className="dog">
